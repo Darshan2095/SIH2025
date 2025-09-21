@@ -31,6 +31,17 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 
 ## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1) Set env vars in Vercel → Project → Settings → Environment Variables
+   - `MONGODB_URI` = your MongoDB connection string
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+2) Build settings
+   - Framework Preset: Next.js
+   - Build Command: `next build`
+   - Output Directory: `.next`
+
+3) Seed data (optional)
+   - After deploy, send a POST to `/api/colleges/import` once to import `ext/jammu_kashmir_colleges_govt_private.json`.
+
+4) Local dev
+   - Create `.env.local` with `MONGODB_URI`
+   - Run `npm run dev`
