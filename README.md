@@ -1,47 +1,91 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+📖 Overview
 
-## Getting Started
+CareerDisha is an online career guidance platform designed for students of Jammu & Kashmir to access verified information about career paths, colleges, courses, entrance exams, and scholarships — all in one place.
 
-First, run the development server:
+The goal is to bridge the information gap and help students make informed career decisions through a modern, responsive, and user-friendly web application built using Next.js.
 
-```bash
+🚀 Features
+
+🏫 Browse information about colleges, courses, and career options
+
+💸 Access latest scholarships and government schemes
+
+🔍 Search and filter content by interest, stream, or eligibility
+
+🧑‍💼 Admin panel to manage and update information dynamically
+
+📱 Fully responsive design for mobile and desktop users
+
+⚡ SEO-optimized with Next.js static site generation (SSG) for fast loading
+
+🔐 Secure data management and API integration
+
+🧰 Tech Stack
+
+Frontend: Next.js, React.js, Tailwind CSS
+Backend: Node.js, Express.js
+Database: MongoDB (Mongoose ODM)
+APIs: REST APIs for dynamic content
+Deployment: Vercel / Render
+Version Control: Git & GitHub
+
+🏗️ Project Architecture
+CareerDisha/
+│
+├── components/       # Reusable UI components
+├── pages/            # Next.js page routes
+├── models/           # Mongoose schemas
+├── api/              # Backend API endpoints
+├── public/           # Static assets
+├── styles/           # Global Tailwind & CSS styles
+└── utils/            # Helper functions and configurations
+
+⚙️ Installation & Setup
+
+To run the project locally:
+
+# Clone this repository
+git clone https://github.com/Darshan2095/CareerDisha.git
+
+# Navigate into the folder
+cd CareerDisha
+
+# Install dependencies
+npm install
+
+# Create a .env.local file and add your MongoDB URI and environment variables
+
+# Start the development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Then open http://localhost:3000
+ in your browser. 🎯
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+🧑‍💻 Author
 
-To learn more about Next.js, take a look at the following resources:
+Darshan Babariya
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🎓 3rd Year Computer Engineering Student
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+💼 Ex–Full Stack Developer Intern @ RhynoEV
 
-## Deploy on Vercel
+🧠 Skilled in Next.js, React.js, Node.js, MongoDB, and DSA in Java
 
-1) Set env vars in Vercel → Project → Settings → Environment Variables
-   - `MONGODB_URI` = your MongoDB connection string
+🌐 GitHub - https://github.com/Darshan2095
+ | LinkedIn - https://www.linkedin.com/in/darshanbabariya/
 
-2) Build settings
-   - Framework Preset: Next.js
-   - Build Command: `next build`
-   - Output Directory: `.next`
+⭐ Future Enhancements
 
-3) Seed data (optional)
-   - After deploy, send a POST to `/api/colleges/import` once to import `ext/jammu_kashmir_colleges_govt_private.json`.
+Integration of AI-based career recommendation system
 
-4) Local dev
-   - Create `.env.local` with `MONGODB_URI`
-   - Run `npm run dev`
+Personalized user login & dashboards
+
+Bookmark and save feature for scholarships/courses
+
+Admin analytics dashboard
+
+🏁 Conclusion
+
+CareerDisha aims to empower students from Jammu & Kashmir with accessible, reliable, and well-structured career information through modern full stack web technologies.
